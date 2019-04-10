@@ -17,7 +17,7 @@ $("#add-new-button").on("click", function(e){
 $("#button-list").html(arr.map(list));
 
 //when a button is clicked it will show the gifs related to that animal.
-$(".animal").on("click", function(){
+$(document).on("click", ".animal", function(){
     event.preventDefault();
     searchTerm = $(this).attr("value");
     var queryURL = `https://api.giphy.com/v1/gifs/search?api_key=ZsXWMZfyusIH6Ez4N3V1vpVPtc1AuSIa&q=${searchTerm}&limit=10&offset=0&rating=G&lang=en`;
@@ -32,7 +32,7 @@ $(".animal").on("click", function(){
 
 
 //when an image is clicked it will animate or not that image.
-$(".gif").on("click", function() {
+$(document).on("click", ".gif", function() {
     console.log($(this).attr("data-state"));
     if($(this).attr("data-state")==="still"){
       $(this).attr("data-state", "not");
