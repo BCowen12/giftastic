@@ -7,10 +7,28 @@
   <meta charset="UTF-8">
   <title>Giftastic</title>
 
+  <style>
+    #top{
+      padding: 55px;
+      background-color: darkgreen;
+      color: whitesmoke;
+    }
+    #gifList{
+      padding-left: 55px;
+    }
+    #whole{
+      padding-left: 55px;
+    }
+    #buttons{
+      padding-left: 55px;
+    }
+  </style>
+   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-
+<container id="whole">
 <body>
-
+  <div class="row" id="top">
+<span id="top">
     <h1>Click a button to show images. </br>
         Click an image to make it play and again to make it stop.</h1>
 
@@ -18,16 +36,19 @@
   <form>
     <span id="add-buttons">Add a New Animal Button: <input id="new-button" type="text" ><input id="add-new-button" value="Add Item" type="submit"></span>
   </form>
-
+</span>
   <hr>
-
+</div>
+<div class="row" id="buttons">
   <div id="button-list"></div>
-
-
+</div>
+<div class="row" id="gifList">
   <div id="gifs"></div>
-
+</div>
 </body>
+</container>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="app.js"></script>
 
+</html>

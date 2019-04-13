@@ -1,7 +1,7 @@
 
 
 var searchTerm = "";
-var arr = ["dog", "cat", "bird", "mouse"];
+var arr = ["dog", "cat", "bird", "mouse", "panther"];
 
 //when add item is clicked a button will be created for it.
 $("#add-new-button").on("click", function(e){
@@ -45,7 +45,7 @@ $(document).on("click", ".gif", function() {
 
 //creates buttons for the items in the array
 function list(list){
-    return `<button class="animal" value="${list}">${list}</button>`;
+    return ` <button type="button" class="btn btn-secondary animal" value="${list}">${list}</button> `;
 };
 
 
